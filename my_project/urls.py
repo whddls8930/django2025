@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/',include('product.urls')),
     path('',include('pages.urls')),# 빈 경로를 product 앱으로 연결
+    path('accounts/', include('accounts.urls')),
+
 ]
